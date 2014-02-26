@@ -10,15 +10,5 @@ public class BeersDao {
 	FabricaDeConexoes fab = new FabricaDeConexoes();
 	Connection con = null;
 		
-		public ResultSet listaCervejas() throws SQLException{
-			Connection con = fab.getConnection();			
-			String sql = "SELECT * FROM GSH_ATENDIMENTO WHERE 0 = 0 AND ID_ATENDIMENTO = 4";			
-			PreparedStatement stm = con.prepareStatement(sql);
-			ResultSet result = stm.executeQuery();
-			
-			con.close();
-			stm.close();
-			
-			return result;
-		}
+		
 }
